@@ -6,9 +6,41 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
 function reverseString(text) {
+    return text.split('').reverse().join('')
+    
     // Code goes here
 }
 
+function reverseString(text) {
+    let reversed = ''
+    for(let i = text.length; i >= 0; i--) {
+        reversed += text[i]
+    }
+    return reversed
+    // Code goes here
+}
 
+function reverseString(text) {
+    let reversed = ''
+
+    for(let char of text) {
+        reversed = char + reversed
+    }
+
+    return reversed
+}
+
+function reverseString(text) {
+    if (text === "") {
+        return ""
+    } else {
+        return reverseString(text.substr(1)) + text[0]
+    }
+}
+
+
+function reverseString (text) {
+    return text.split("").reduce((acc, char) => char + acc, "")
+}
 
 module.exports = reverseString
