@@ -8,7 +8,7 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 function reverseString(text) {
     return text.split('').reverse().join('')
     
-    // Code goes here
+
 }
 
 function reverseString(text) {
@@ -17,7 +17,7 @@ function reverseString(text) {
         reversed += text[i]
     }
     return reversed
-    // Code goes here
+
 }
 
 function reverseString(text) {
